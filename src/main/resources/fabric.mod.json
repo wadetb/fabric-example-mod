@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "tele-mc",
+	"id": "telemc",
 	"version": "${version}",
 	"name": "TeleMC",
 	"description": "Simple mod to extract telemetry data from Minecraft",
@@ -8,24 +8,24 @@
 		"Wade Brainerd"
 	],
 	"contact": {
-		"homepage": "https://github.com/wadetb/tele-mc",
-		"sources": "https://github.com/wadetb/tele-mc"
+		"homepage": "https://github.com/wadetb/telemc",
+		"sources": "https://github.com/wadetb/telemc"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/telemc/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.wadeb.telemc.TeleMCMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.wadeb.telemc.client.TeleMCModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"telemc.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "telemc.client.mixins.json",
 			"environment": "client"
 		}
 	],
